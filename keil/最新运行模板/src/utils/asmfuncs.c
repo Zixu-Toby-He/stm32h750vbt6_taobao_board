@@ -1,0 +1,63 @@
+#include "asmfuncs.h"
+
+#if defined(__clang__) // 使用V6编译器(clang)
+// THUMB 指令不支持汇编内联
+// 采用如下方法实现执行汇编指令WFI
+void __attribute__((noinline)) WFI_SET(void)
+{
+	__asm__("wfi");
+}
+
+// 关闭所有中断(但是不包括fault和NMI中断)
+void __attribute__((noinline)) INTX_DISABLE(void)
+{
+	__asm__(
+		"cpsid i \t\n"
+		"bx lr"
+	);
+}
+
+// 开启所有中断
+void __attribute__((noinline)) INTX_ENABLE(void)
+{
+	__asm__("cpsie i \t\n"
+		"bx lr"
+	);
+}
+
+// 设置栈顶地址
+// addr：栈顶地址
+void __attribute__((noinline)) MSR_MSP(u32 addr)
+{
+	__asm__(
+		"msr msp, r0 \t\n"
+		"bx r14"
+	);
+}
+#elif defined (__CC_ARM)    //使用V5编译器(ARMCC)
+// THUMB 指令不支持汇编内联
+// 采用如下方法实现执行汇编指令 WFI
+__asm void WFI_SET(void)
+{
+	WFI;
+}
+// 关闭所有中断（但是不包括 fault 和 NMI 中断）
+__asm void INTX_DISABLE(void)
+{
+	CPSID   I
+	BX      LR
+}
+// 开启所有中断
+__asm void INTX_ENABLE(void)
+{
+	CPSIE   I
+	BX      LR
+}
+//设置栈顶地址
+//addr:栈顶地址
+__asm void MSR_MSP(u32 addr)
+{
+	MSR MSP, r0 // set Main Stack value
+	BX r14
+}
+#endif

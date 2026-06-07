@@ -1,3 +1,10 @@
+# 工程
+.vscode
+*.uvguix.*
+*.uvgui.*
+Listings
+DebugConfig
+
 # Prerequisites
 *.d
 
@@ -17,7 +24,7 @@
 *.pch
 
 # Libraries
-*.lib
+#*.lib
 *.a
 *.la
 *.lo

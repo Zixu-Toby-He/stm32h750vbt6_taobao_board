@@ -1,0 +1,8 @@
+# keil工程文件
+*.uvoptx
+*.uvguix.*
+*.uvgui.*
+Listings
+DebugConfig
+Objects
+!proj/*.uvprojx

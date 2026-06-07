@@ -1,0 +1,147 @@
+
+#ifndef __GPIO_OUTPUT_H__
+#define __GPIO_OUTPUT_H__
+
+
+#include "stm32h7xx_hal.h"
+
+
+#define OUTPUT1_RCC_CLK_ENABLE           __HAL_RCC_GPIOD_CLK_ENABLE
+#define OUTPUT1_GPIO_PIN                 GPIO_PIN_15
+#define OUTPUT1_GPIO                     GPIOD
+
+#define OUTPUT2_RCC_CLK_ENABLE           __HAL_RCC_GPIOD_CLK_ENABLE
+#define OUTPUT2_GPIO_PIN                 GPIO_PIN_14
+#define OUTPUT2_GPIO                     GPIOD
+
+#define OUTPUT3_RCC_CLK_ENABLE           __HAL_RCC_GPIOD_CLK_ENABLE
+#define OUTPUT3_GPIO_PIN                 GPIO_PIN_13
+#define OUTPUT3_GPIO                     GPIOD
+
+#define OUTPUT4_RCC_CLK_ENABLE           __HAL_RCC_GPIOD_CLK_ENABLE
+#define OUTPUT4_GPIO_PIN                 GPIO_PIN_12
+#define OUTPUT4_GPIO                      GPIOD
+
+#define OUTPUT5_RCC_CLK_ENABLE           __HAL_RCC_GPIOE_CLK_ENABLE
+#define OUTPUT5_GPIO_PIN                 GPIO_PIN_14
+#define OUTPUT5_GPIO                     GPIOE
+
+#define OUTPUT6_RCC_CLK_ENABLE           __HAL_RCC_GPIOE_CLK_ENABLE
+#define OUTPUT6_GPIO_PIN                 GPIO_PIN_13
+#define OUTPUT6_GPIO                     GPIOE
+
+#define OUTPUT7_RCC_CLK_ENABLE           __HAL_RCC_GPIOE_CLK_ENABLE
+#define OUTPUT7_GPIO_PIN                 GPIO_PIN_11
+#define OUTPUT7_GPIO                     GPIOE
+
+#define OUTPUT8_RCC_CLK_ENABLE           __HAL_RCC_GPIOE_CLK_ENABLE
+#define OUTPUT8_GPIO_PIN                 GPIO_PIN_9
+#define OUTPUT8_GPIO                     GPIOE
+
+#define OUTPUT9_RCC_CLK_ENABLE           __HAL_RCC_GPIOB_CLK_ENABLE
+#define OUTPUT9_GPIO_PIN                 GPIO_PIN_0
+#define OUTPUT9_GPIO                     GPIOB
+
+#define OUTPUT10_RCC_CLK_ENABLE           __HAL_RCC_GPIOA_CLK_ENABLE
+#define OUTPUT10_GPIO_PIN                 GPIO_PIN_6
+#define OUTPUT10_GPIO                     GPIOA
+
+#define OUTPUT11_RCC_CLK_ENABLE           __HAL_RCC_GPIOE_CLK_ENABLE
+#define OUTPUT11_GPIO_PIN                 GPIO_PIN_10
+#define OUTPUT11_GPIO                     GPIOE
+
+#define OUTPUT12_RCC_CLK_ENABLE           __HAL_RCC_GPIOE_CLK_ENABLE
+#define OUTPUT12_GPIO_PIN                 GPIO_PIN_12
+#define OUTPUT12_GPIO                     GPIOE
+
+#define OUTPUT13_RCC_CLK_ENABLE           __HAL_RCC_GPIOA_CLK_ENABLE
+#define OUTPUT13_GPIO_PIN                 GPIO_PIN_3
+#define OUTPUT13_GPIO                     GPIOA
+
+#define OUTPUT14_RCC_CLK_ENABLE           __HAL_RCC_GPIOC_CLK_ENABLE
+#define OUTPUT14_GPIO_PIN                 GPIO_PIN_0
+#define OUTPUT14_GPIO                     GPIOC
+
+
+#define OUTPUT15_RCC_CLK_ENABLE           __HAL_RCC_GPIOC_CLK_ENABLE
+#define OUTPUT15_GPIO_PIN                 GPIO_PIN_2
+#define OUTPUT15_GPIO                     GPIOC
+
+#define OUTPUT16_RCC_CLK_ENABLE           __HAL_RCC_GPIOC_CLK_ENABLE
+#define OUTPUT16_GPIO_PIN                 GPIO_PIN_3
+#define OUTPUT16_GPIO                     GPIOC
+
+
+
+#define OUTPUT1_HIGH()                   HAL_GPIO_WritePin(OUTPUT1_GPIO,OUTPUT1_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT1_LOW()                    HAL_GPIO_WritePin(OUTPUT1_GPIO,OUTPUT1_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT1_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT1_GPIO, OUTPUT1_GPIO_PIN)
+
+#define OUTPUT2_HIGH()                   HAL_GPIO_WritePin(OUTPUT2_GPIO,OUTPUT2_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT2_LOW()                    HAL_GPIO_WritePin(OUTPUT2_GPIO,OUTPUT2_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT2_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT2_GPIO, OUTPUT2_GPIO_PIN)
+
+#define OUTPUT3_HIGH()                   HAL_GPIO_WritePin(OUTPUT3_GPIO,OUTPUT3_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT3_LOW()                    HAL_GPIO_WritePin(OUTPUT3_GPIO,OUTPUT3_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT3_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT3_GPIO, OUTPUT3_GPIO_PIN)
+
+#define OUTPUT4_HIGH()                   HAL_GPIO_WritePin(OUTPUT4_GPIO,OUTPUT4_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT4_LOW()                    HAL_GPIO_WritePin(OUTPUT4_GPIO,OUTPUT4_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT4_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT4_GPIO, OUTPUT4_GPIO_PIN)
+
+#define OUTPUT5_HIGH()                   HAL_GPIO_WritePin(OUTPUT5_GPIO,OUTPUT5_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT5_LOW()                    HAL_GPIO_WritePin(OUTPUT5_GPIO,OUTPUT5_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT5_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT5_GPIO, OUTPUT5_GPIO_PIN)
+
+#define OUTPUT6_HIGH()                   HAL_GPIO_WritePin(OUTPUT6_GPIO,OUTPUT6_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT6_LOW()                    HAL_GPIO_WritePin(OUTPUT6_GPIO,OUTPUT6_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT6_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT6_GPIO, OUTPUT6_GPIO_PIN)
+
+#define OUTPUT7_HIGH()                   HAL_GPIO_WritePin(OUTPUT7_GPIO,OUTPUT7_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT7_LOW()                    HAL_GPIO_WritePin(OUTPUT7_GPIO,OUTPUT7_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT7_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT7_GPIO, OUTPUT7_GPIO_PIN)
+
+#define OUTPUT8_HIGH()                   HAL_GPIO_WritePin(OUTPUT8_GPIO,OUTPUT8_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT8_LOW()                    HAL_GPIO_WritePin(OUTPUT8_GPIO,OUTPUT8_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT8_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT8_GPIO, OUTPUT8_GPIO_PIN)
+
+#define OUTPUT9_HIGH()                   HAL_GPIO_WritePin(OUTPUT9_GPIO,OUTPUT9_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT9_LOW()                    HAL_GPIO_WritePin(OUTPUT9_GPIO,OUTPUT9_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT9_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT9_GPIO, OUTPUT9_GPIO_PIN)
+
+#define OUTPUT10_HIGH()                   HAL_GPIO_WritePin(OUTPUT10_GPIO,OUTPUT10_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT10_LOW()                    HAL_GPIO_WritePin(OUTPUT10_GPIO,OUTPUT10_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT10_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT10_GPIO, OUTPUT10_GPIO_PIN)
+
+#define OUTPUT11_HIGH()                   HAL_GPIO_WritePin(OUTPUT11_GPIO,OUTPUT11_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT11_LOW()                    HAL_GPIO_WritePin(OUTPUT11_GPIO,OUTPUT1_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT11_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT11_GPIO, OUTPUT11_GPIO_PIN)
+
+#define OUTPUT12_HIGH()                   HAL_GPIO_WritePin(OUTPUT12_GPIO,OUTPUT12_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT12_LOW()                    HAL_GPIO_WritePin(OUTPUT12_GPIO,OUTPUT12_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT12_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT12_GPIO, OUTPUT12_GPIO_PIN)
+
+
+#define OUTPUT13_HIGH()                   HAL_GPIO_WritePin(OUTPUT13_GPIO,OUTPUT13_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT13_LOW()                    HAL_GPIO_WritePin(OUTPUT13_GPIO,OUTPUT13_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT13_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT13_GPIO, OUTPUT13_GPIO_PIN)
+
+#define OUTPUT14_HIGH()                   HAL_GPIO_WritePin(OUTPUT14_GPIO,OUTPUT14_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT14_LOW()                    HAL_GPIO_WritePin(OUTPUT14_GPIO,OUTPUT14_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT14_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT14_GPIO, OUTPUT14_GPIO_PIN)
+
+#define OUTPUT15_HIGH()                   HAL_GPIO_WritePin(OUTPUT15_GPIO,OUTPUT15_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT15_LOW()                    HAL_GPIO_WritePin(OUTPUT15_GPIO,OUTPUT15_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT15_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT15_GPIO, OUTPUT15_GPIO_PIN)
+
+#define OUTPUT16_HIGH()                   HAL_GPIO_WritePin(OUTPUT16_GPIO,OUTPUT16_GPIO_PIN,GPIO_PIN_SET)
+#define OUTPUT16_LOW()                    HAL_GPIO_WritePin(OUTPUT16_GPIO,OUTPUT16_GPIO_PIN,GPIO_PIN_RESET)
+#define OUTPUT16_TOGGLE()                 HAL_GPIO_TogglePin(OUTPUT16_GPIO, OUTPUT16_GPIO_PIN)
+
+
+void outputOFF(void);
+void outputON(void);
+void OUTPUT_GPIO_Init(void);
+
+#endif  
+
