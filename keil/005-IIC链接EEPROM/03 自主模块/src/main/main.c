@@ -1,18 +1,18 @@
-// C±ê×¼¿â
+// Cæ ‡å‡†åº“
 #include <stdint.h>
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
 
-// hal¿â
+// halåº“
 #include "stm32h750xx.h"
 #include "stm32h7xx_hal.h"
 
-// ºËĞÄÉè±¸
+// æ ¸å¿ƒè®¾å¤‡
 #include "mpu.h"
 #include "cache.h"
 
-// Æ¬ÉÏÍâÉè
+// ç‰‡ä¸Šå¤–è®¾
 #include "dac.h"
 #include "systick.h"
 #include "tim2.h"
@@ -20,7 +20,7 @@
 #include "tim4.h"
 #include "tim5.h"
 
-// °åÉÏÍâÉè
+// æ¿ä¸Šå¤–è®¾
 #include "led.h"
 #include "sp232.h"
 #include "ads8688.h"
@@ -34,19 +34,19 @@
 
 void machine_init(void)
 {
-	CPU_CACHE_Enable();                 // »º´æ
-	HAL_Init();                         // HAL ¿â³õÊ¼»¯
-	MPU_Memory_Protection();            // ÄÚ´æ±£»¤£¿
-	Stm32_Clock_Init(192, 5, 2, 2);     // Ê±ÖÓ³õÊ¼»¯
-	delay_init();                       // ÑÓ³Ù³õÊ¼»¯
+	CPU_CACHE_Enable();                 // ç¼“å­˜
+	HAL_Init();                         // HAL åº“åˆå§‹åŒ–
+	MPU_Memory_Protection();            // å†…å­˜ä¿æŠ¤ï¼Ÿ
+	Stm32_Clock_Init(192, 5, 2, 2);     // æ—¶é’Ÿåˆå§‹åŒ–
+	delay_init();                       // å»¶è¿Ÿåˆå§‹åŒ–
 }
 
 void devices_init(void)
 {
 	eeprom_page_t page = 0;
 	eeprom_page_data_t data = {{0,0,0,0,0,0,0,0}};
-	db9_init(115200, msghandler);    // ´®¿Ú³õÊ¼»¯
-	LED_Init();                      // LED ³õÊ¼»¯
+	db9_init(115200, msghandler);    // ä¸²å£åˆå§‹åŒ–
+	LED_Init();                      // LED åˆå§‹åŒ–
 	eeprom_init();
 	for(page = 0; page < PAGE_NUM; page++)
 	{
@@ -80,7 +80,7 @@ int main(void)
 
 	while(true)
 	{
-		// Ğ´Èë
+		// å†™å…¥
 		if (is_data_in())
 		{
 			temp = get_msg(msg_in);
@@ -97,7 +97,7 @@ int main(void)
 			clear_msg();
 			db9_sendstr("Write Successfully.\r\n");
 		}
-		// ¶ÁÈ¡
+		// è¯»å–
 		i = 0;
 		do
 		{

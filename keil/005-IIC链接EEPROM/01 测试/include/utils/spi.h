@@ -3,12 +3,12 @@
 #define __SPI_H
 #include "system.h"
 
-extern SPI_HandleTypeDef SPI_Handler;  // SPI¾ä±ú
+extern SPI_HandleTypeDef SPI_Handler;  // SPIå¥æŸ„
 
 //-----------------------------------------------------------------
-// Íâ²¿º¯ÊıÉùÃ÷
+// å¤–éƒ¨å‡½æ•°å£°æ˜
 //-----------------------------------------------------------------
-void SPI5_Init(void);			 									// ³õÊ¼»¯SPI¿Ú 
-uint8_t SPI5_ReadWriteByte(uint8_t TxData);	// SPI¶ÁĞ´
+void SPI5_Init(void);			 									// åˆå§‹åŒ–SPIå£ 
+uint8_t SPI5_ReadWriteByte(uint8_t TxData);	// SPIè¯»å†™
  
 #endif

@@ -186,7 +186,6 @@
   */
 /* #define USE_FULL_ASSERT    1 */
 
-
 /* ################## SPI peripheral configuration ########################## */
 /** 
   * @brief Used to activate CRC feature inside HAL SPI Driver

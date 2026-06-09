@@ -112,7 +112,7 @@
                 (+++)HAL_HRTIM_EventConfig(): configures the conditioning of an
                      external event channel: source, polarity, edge-sensitivity.
                      External event can be used as triggers (timer reset, input
-                     capture, burst mode, ADC triggers, delayed protection, …)
+                     capture, burst mode, ADC triggers, delayed protection, ...)
                      They can also be used to set or reset timer outputs. Up to
                      10 event channels are available.
                 (+++)HAL_HRTIM_EventPrescalerConfig(): configures the external

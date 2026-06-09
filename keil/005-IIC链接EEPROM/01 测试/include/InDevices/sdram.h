@@ -1,10 +1,10 @@
 #ifndef _SDRAM_H
 #define _SDRAM_H
 #include "sys.h"
-extern SDRAM_HandleTypeDef SDRAM_Handler;//SDRAM句柄
-#define Bank5_SDRAM_ADDR    ((u32)(0XC0000000)) //SDRAM开始地址
+extern SDRAM_HandleTypeDef SDRAM_Handler;//SDRAM鍙ユ焺
+#define Bank5_SDRAM_ADDR    ((u32)(0XC0000000)) //SDRAM寮�濮嬪湴鍧�
 
-//SDRAM配置参数
+//SDRAM閰嶇疆鍙傛暟
 #define SDRAM_MODEREG_BURST_LENGTH_1             ((u16)0x0000)
 #define SDRAM_MODEREG_BURST_LENGTH_2             ((u16)0x0001)
 #define SDRAM_MODEREG_BURST_LENGTH_4             ((u16)0x0002)

@@ -2,10 +2,10 @@
 #define _TIMER_H
 #include "sys.h"
 
-extern TIM_HandleTypeDef TIM3_Handler;      //¶¨Ê±Æ÷3PWM¾ä±ú 
-extern TIM_OC_InitTypeDef TIM3_CH4Handler; 	//¶¨Ê±Æ÷3Í¨µÀ4¾ä±ú
+extern TIM_HandleTypeDef TIM3_Handler;      //ï¿½ï¿½Ê±ï¿½ï¿½3PWMï¿½ï¿½ï¿½ 
+extern TIM_OC_InitTypeDef TIM3_CH4Handler; 	//ï¿½ï¿½Ê±ï¿½ï¿½3Í¨ï¿½ï¿½4ï¿½ï¿½ï¿½
 
-void TIM3_Init(u16 arr,u16 psc);    		//¶¨Ê±Æ÷³õÊ¼»¯
+void TIM3_Init(u16 arr,u16 psc);    		//ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
 void TIM3_PWM_Init(u16 arr,u16 psc);
 void TIM_SetTIM3Compare4(u32 compare);
 #endif
