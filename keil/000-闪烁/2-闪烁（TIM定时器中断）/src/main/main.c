@@ -31,18 +31,18 @@ void tim_timeout_func(void)
 int main(void)
 {
 
-	CPU_CACHE_Enable();           // »º´æ
-	HAL_Init();                   // HAL ¿â³õÊ¼»¯
-	MPU_Memory_Protection();      // ÄÚ´æ±£»¤£¿
+	CPU_CACHE_Enable();           // ç¼“å­˜
+	HAL_Init();                   // HAL åº“åˆå§‹åŒ–
+	MPU_Memory_Protection();      // å†…å­˜ä¿æŠ¤ï¼Ÿ
 
-	Stm32_Clock_Init(192, 5, 2, 2); // Ê±ÖÓ³õÊ¼»¯
-	delay_init();                   // ÑÓ³Ù³õÊ¼»¯
-	LED_Init();                     // LED ³õÊ¼»¯
+	Stm32_Clock_Init(192, 5, 2, 2); // æ—¶é’Ÿåˆå§‹åŒ–
+	delay_init();                   // å»¶è¿Ÿåˆå§‹åŒ–
+	LED_Init();                     // LED åˆå§‹åŒ–
 
 	db9_init(115200, msghandler);
 
-	DAC_Init(DAC1_CH1);          // Êı×ªÄ£³õÊ¼»¯
-	ADS8688_Init();              // Ä£×ªÊı³õÊ¼»¯
+	DAC_Init(DAC1_CH1);          // æ•°è½¬æ¨¡åˆå§‹åŒ–
+	ADS8688_Init();              // æ¨¡è½¬æ•°åˆå§‹åŒ–
 
 	TIM5_Init((float)100, 1000, tim_timeout_func);
 
