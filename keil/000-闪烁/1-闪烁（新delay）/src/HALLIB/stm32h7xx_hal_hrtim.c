@@ -174,7 +174,7 @@
                         - Setting the delayed protection mode for the HRTIM timer
                           (source and outputs on which the delayed protection are applied),
                         - Specifying the HRTIM timer update and reset triggers,
-                        - Specifying the HRTIM timer registers update policy (preload enabling, …).
+                        - Specifying the HRTIM timer registers update policy (preload enabling, ...).
                 (+++)HAL_HRTIM_TimerEventFilteringConfig(): configures external 
                      event blanking and windowingcircuitry of a HRTIM timer:
                         - Blanking:  to mask external events during a defined 

@@ -385,7 +385,7 @@ HAL_StatusTypeDef HAL_CRYP_Init(CRYP_HandleTypeDef *hcryp)
     HAL_CRYP_MspInit(hcryp);
   }
   
-  /* Set the key size(This bit field is ‘don’t care’ in the DES or TDES modes) data type and Algorithm */ 
+  /* Set the key size(This bit field is 'don't care' in the DES or TDES modes) data type and Algorithm */ 
   MODIFY_REG(hcryp->Instance->CR, CRYP_CR_DATATYPE|CRYP_CR_KEYSIZE|CRYP_CR_ALGOMODE, hcryp->Init.DataType | hcryp->Init.KeySize | hcryp->Init.Algorithm);
   
   /* Reset Error Code field */
@@ -478,7 +478,7 @@ HAL_StatusTypeDef HAL_CRYP_SetConfig(CRYP_HandleTypeDef *hcryp, CRYP_ConfigTypeD
     hcryp->Init.HeaderSize = pConf->HeaderSize;
     hcryp->Init.B0         = pConf->B0;
     
-    /* Set the key size(This bit field is ‘don’t care’ in the DES or TDES modes) data type, AlgoMode and operating mode*/     
+    /* Set the key size(This bit field is 'don't care' in the DES or TDES modes) data type, AlgoMode and operating mode*/     
     MODIFY_REG(hcryp->Instance->CR, CRYP_CR_DATATYPE|CRYP_CR_KEYSIZE|CRYP_CR_ALGOMODE, hcryp->Init.DataType | hcryp->Init.KeySize | hcryp->Init.Algorithm);
     
     /* Process Unlocked */
