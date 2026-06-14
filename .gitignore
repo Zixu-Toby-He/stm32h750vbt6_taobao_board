@@ -4,6 +4,7 @@
 *.uvgui.*
 Listings
 DebugConfig
+*.crf
 
 # Prerequisites
 *.d

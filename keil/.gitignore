@@ -5,4 +5,5 @@
 Listings
 DebugConfig
 Objects
+build/
 !proj/*.uvprojx
