@@ -1,0 +1,6 @@
+build
+result
+
+*.a
+*.lst
+*.bin

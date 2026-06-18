@@ -1,9 +1,19 @@
 # keil工程文件
+DebugConfig
+Listings
+Objects
 *.uvoptx
 *.uvguix.*
 *.uvgui.*
-Listings
-DebugConfig
-Objects
+*.uvguix
+*.uvoptx
 build/
 !proj/*.uvprojx
+
+# build目录下未知文件
+*.htm
+*.lnp
+*.sct
+*.crf
+*.dep
+*.axf
